@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  width: 100%;
+  height: calc(100% - 64px);
+}
+
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: calc(100% - 60px);
+  height: calc(100% - 64px);
+  padding: 30px;
+}

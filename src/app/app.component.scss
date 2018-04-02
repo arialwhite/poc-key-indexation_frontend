@@ -1,0 +1,48 @@
+/*
+----------------------------
+  Base 
+---------------------------- 
+*/
+
+/* component */
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+/*
+----------------------------
+  Toolbar 
+---------------------------- 
+*/
+
+/* search input */
+.search-color {
+  padding: 10px 5px;
+  margin: 0 0 0 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  outline: 0;
+}
+
+/* search icon */
+.fa-search {
+  position: relative;
+  right: 40px;
+  color: #555;
+  font-size: 25px;
+  top: 3px;
+}
+
+/* kafka menu */
+.menu-right {
+  display: block;
+  position: absolute;
+  right: 10px;
+}

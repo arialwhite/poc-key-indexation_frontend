@@ -1,0 +1,5 @@
+<div class="boxes">
+  <div class="box" *ngFor="let g of gradients$ | async">
+    <ind-basic-bloc [gradient]="g"></ind-basic-bloc>
+  </div>
+</div>

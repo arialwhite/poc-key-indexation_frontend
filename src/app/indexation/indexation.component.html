@@ -1,0 +1,15 @@
+<div class="actions">
+  <button md-raised-button color="primary" (click)="generate()">Generate</button>
+  <button md-raised-button color="primary" (click)="save()">Save</button>
+</div>
+
+<div class="out">
+  <div class="tuples" *ngFor="let t of gradientsByColor">
+    <h2>{{t[0]}}</h2>
+    <div class="boxes">
+      <div class="box" *ngFor="let g of t[1]">
+        <ind-basic-bloc [gradient]="g"></ind-basic-bloc>
+      </div>
+    </div>
+  </div>
+</div>

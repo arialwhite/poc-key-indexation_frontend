@@ -1,0 +1,27 @@
+/*
+----------------------------
+  Base 
+---------------------------- 
+*/
+
+/* component */
+:host {
+  display: block;
+  height: calc(100% - 64px);
+  width: 100%;
+  padding: 50px 25px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  background: #fff;
+  overflow: scroll;
+}
+
+h2 {
+  color: #444;
+}
+
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+}

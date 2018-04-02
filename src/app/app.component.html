@@ -1,0 +1,27 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <label>Search in Cassandra </label> 
+    <input type="text" class="search-color" [ngModel]="currentSearch" (ngModelChange)="onSearchColor($event)" placeholder="color" name="search">
+    <i class="fa fa-search"></i>
+
+    <mat-menu #appMenu="matMenu">
+        <ng-template matMenuContent>
+          <button mat-menu-item (click)="goKafka()">Kafka</button>
+          <button mat-menu-item (click)="goSpark()">Spark</button>
+          <button mat-menu-item (click)="goSwagger()">POC Backend</button>
+        </ng-template>
+    </mat-menu>
+      
+    <button mat-button [matMenuTriggerFor]="appMenu">
+      Quick links
+    </button>
+      
+    
+    <button mat-raised-button class="menu-right" color="accent" (click)="demo()">
+      Feed it
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+  
+<router-outlet></router-outlet>
